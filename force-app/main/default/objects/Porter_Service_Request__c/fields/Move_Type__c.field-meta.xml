@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Move_Type__c</fullName>
+    <label>Move Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Household Move</fullName>
+                <default>false</default>
+                <label>Household Move</label>
+            </value>
+            <value>
+                <fullName>Full Pack &amp; Move</fullName>
+                <default>false</default>
+                <label>Full Pack &amp; Move</label>
+            </value>
+            <value>
+                <fullName>Partial Move</fullName>
+                <default>false</default>
+                <label>Partial Move</label>
+            </value>
+            <value>
+                <fullName>Long-Distance Move</fullName>
+                <default>false</default>
+                <label>Long-Distance Move</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

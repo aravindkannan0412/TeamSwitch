@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Speed_Requirement__c</fullName>
+    <label>Speed Requirement</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>&lt;50 Mbps,</fullName>
+                <default>false</default>
+                <label>&lt;50 Mbps,</label>
+            </value>
+            <value>
+                <fullName>50–100 Mbps</fullName>
+                <default>false</default>
+                <label>50–100 Mbps</label>
+            </value>
+            <value>
+                <fullName>100–200 Mbps</fullName>
+                <default>false</default>
+                <label>100–200 Mbps</label>
+            </value>
+            <value>
+                <fullName>200–500 Mbps</fullName>
+                <default>false</default>
+                <label>200–500 Mbps</label>
+            </value>
+            <value>
+                <fullName>500 Mbps – 1 Gbps</fullName>
+                <default>false</default>
+                <label>500 Mbps – 1 Gbps</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

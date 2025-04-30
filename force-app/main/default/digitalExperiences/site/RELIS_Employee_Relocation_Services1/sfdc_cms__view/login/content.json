@@ -1,0 +1,115 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Login",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"f7d27114-7385-4cf3-80b1-5f28fe991b6d\",\"columns\":[{\"UUID\":\"c71badd6-5de2-4280-ba08-e11ce0cfd1aa\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"6\",\"seedComponents\":null},{\"UUID\":\"b2d284be-3dd4-497c-9849-bd8f4c62b4dc\",\"columnName\":\"Column 2\",\"columnKey\":\"6d835\",\"columnWidth\":\"6\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-end"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "alignment" : "center",
+                "fit" : "cover",
+                "height" : 661,
+                "imageInfo" : "{\"imageInfoV1\":{\"url\":\"/sfsites/c/cms/delivery/media/MCIGXZU5ZYU5F57AGYSL3W2I7GAI?lastModifiedDate=Tue Apr 29 11:43:39 GMT 2025\",\"altText\":\"\",\"contentKey\":\"MCIGXZU5ZYU5F57AGYSL3W2I7GAI\",\"contentType\":null}}",
+                "overlayColor" : "",
+                "position" : "center center",
+                "width" : 100
+              },
+              "definition" : "dxp_base:image",
+              "id" : "804b56a3-7343-42f0-acce-12e17caf8e05",
+              "type" : "component"
+            } ],
+            "id" : "c71badd6-5de2-4280-ba08-e11ce0cfd1aa",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : {
+                "alignment" : "center",
+                "fit" : "contain",
+                "height" : 350,
+                "imageInfo" : "{\"imageInfoV1\":{\"url\":\"/sfsites/c/cms/delivery/media/MCIVQT4IOV5BEKFIH5FOHP7KLAD4?lastModifiedDate=Tue Apr 29 17:09:37 GMT 2025\",\"altText\":\"\",\"contentKey\":\"MCIVQT4IOV5BEKFIH5FOHP7KLAD4\",\"contentType\":null}}",
+                "overlayColor" : "",
+                "position" : "center center",
+                "width" : 23
+              },
+              "definition" : "dxp_base:image",
+              "id" : "307284a6-4302-4ab5-8416-9f1af7fc7f38",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "forgotPasswordLabel" : "Forgot your password?",
+                "forgotPasswordUrl" : "/ForgotPassword",
+                "loginButtonLabel" : "Log In",
+                "passwordLabel" : "Password",
+                "selfRegisterLabel" : "Not a member?",
+                "selfRegisterUrl" : "/SelfRegister",
+                "startUrl" : "",
+                "usernameLabel" : "Username"
+              },
+              "definition" : "community_login:loginForm",
+              "id" : "3cec72c7-b909-4718-88fb-1147e74bc3dd",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "employeeLoginLinkLabel" : "Are you an employee? Log in"
+              },
+              "definition" : "community_login:employeeLoginLink",
+              "id" : "4fbe25d2-900f-418f-b47f-500747739da3",
+              "type" : "component"
+            } ],
+            "id" : "b2d284be-3dd4-497c-9849-bd8f4c62b4dc",
+            "name" : "6d835",
+            "title" : "Column 2",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "f7d27114-7385-4cf3-80b1-5f28fe991b6d",
+          "type" : "component"
+        } ],
+        "id" : "167c11a6-e1d4-4489-86ff-9d1203a28395",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "Login",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "7116b953-994e-4086-8610-4b99f2a0db29",
+          "type" : "component"
+        } ],
+        "id" : "74ed1593-c1b0-4c40-995a-9d82ac4d8bf5",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "6509b7bb-c1ef-4f96-be6e-b69ad5ca75d7",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "login-main"
+  },
+  "urlName" : "login"
+}

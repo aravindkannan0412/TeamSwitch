@@ -1,0 +1,5 @@
+<apex:page controller="PDFRenderController">
+    <div>
+        <apex:outputText value="{!BodyText}" escape="false" />
+    </div>
+</apex:page>

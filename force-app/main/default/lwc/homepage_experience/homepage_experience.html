@@ -1,0 +1,187 @@
+<template>
+    <lightning-card title="My Porter Tracking" icon-name="doctype:image">
+                <div class="slds-p-around--medium">
+                 <template if:true={porterservice}>
+                <template for:each={porterservice} for:item="Porter">
+                        <div key={Porter.Id} class="booking-item">
+                            <lightning-progress-indicator current-step={Porter.Service_Status__c} type="path" has-error="true" variant="base">
+                            <lightning-progress-step label="Requested" value="Requested"></lightning-progress-step>
+                            <lightning-progress-step label="Scheduled" value="Scheduled"></lightning-progress-step>
+                            <lightning-progress-step label="In Transit" value="In Transit"></lightning-progress-step>
+                            <lightning-progress-step label="Delivered" value="Delivered"></lightning-progress-step>
+                            <lightning-progress-step label="Completed" value="Completed"></lightning-progress-step>
+                            <lightning-progress-step label="Cancelled" value="Cancelled"></lightning-progress-step>
+                            <lightning-progress-step label="Failed" value="Failed"></lightning-progress-step>
+                            <lightning-progress-step label="Delayed" value="Delayed"></lightning-progress-step>
+                        </lightning-progress-indicator>
+                            </div>
+                    </template>
+                </template>
+                    <template if:false={porterservice}>
+                        <div class="insight-box">
+                        <p>No porter service booked. Consider scheduling one to help with moving day logistics.</p>
+                        </div>
+                    </template>
+                </div>
+                </lightning-card>
+    
+        <div class="booking-container">
+            <div class="slds-grid slds-wrap">
+            <div class="slds-col slds-m-top--small slds-large-size_4-of-12 slds-medium-size_1-of-12 slds-size_1-of-12">
+                <lightning-card title="My Booking Detail" icon-name="doctype:image">
+                <div class ="slds-p-around--medium">
+                    <template if:true={bookingdetail}>
+                <template for:each={bookingdetail} for:item="booking">
+                    <div key={booking.Id} class="booking-item">
+                        <div class="demo-only" style="width:30rem">
+                        <article class="slds-tile slds-media">
+                        <div class="slds-media__figure">
+                        <span class="slds-icon_container" title="description of icon when needed">
+                        <lightning-icon icon-name="standard:address" alternative-text="Address" title="Address"></lightning-icon>
+                        </span>
+                        </div>
+                        <div class="slds-media__body">
+                        <h3 class="slds-tile__title slds-truncate" title="Salesforce UX">
+                        <a href="#">{booking.House_Number__c}</a>
+                        </h3>
+                        <div class="slds-tile__detail">
+                        <dl class="slds-list_vertical slds-wrap">
+                        <dt class="slds-item_label slds-text-color_weak slds-truncate" style=" font-size: 15px;font-weight: 600;" title="First Label">House Address:</dt>
+                        <dd class="slds-item_detail slds-truncate" title="Description for first label">{booking.House_Address__c}</dd>
+                        <dt class="slds-item_label slds-text-color_weak slds-truncate" style=" font-size: 15px;font-weight: 600;" title="Second Label">Rental Start Date:</dt>
+                        <dd class="slds-item_detail slds-truncate" title="Description for second label">{booking.Rental_Start_Date__c}</dd>
+                        <dt class="slds-item_label slds-text-color_weak slds-truncate" style=" font-size: 15px;font-weight: 600;" title="Second Label">Rental End Date</dt>
+                        <dd class="slds-item_detail slds-truncate" title="Description for second label">{booking.Rental_End_Date__c}</dd>
+                        </dl>
+                        </div>
+                        </div>
+                        </article>
+                        </div>
+                    </div>
+                </template>
+            </template>
+            <template if:false={bookingdetail}>
+                <!-- Insight when no booking data -->
+                <div class="insight-box">
+                <p>No booking found. You can add your travel booking to help us plan better.</p>
+                </div>
+            </template>
+                </div>
+                </lightning-card>
+            </div>
+            <div class="slds-col slds-p-around--medium slds-large-size_4-of-12 slds-medium-size_1-of-12 slds-size_1-of-12">
+                <lightning-card title="Rental Agreement" icon-name="doctype:image">
+                <template if:true={contentLink}>
+                    <div class="slds-p-around--medium">
+                    <a href={contentLink} download target="_blank">
+                    <lightning-button label="Download PDF" icon-name="utility:download" variant="brand"></lightning-button>
+                    </a>
+                    <div class="insight-box">
+                        <p>Review the details to keep your move-in on track.</p>
+                    </div>
+                    </div>
+                    </template>
+                    <template if:false={contentLink}>
+                    <!-- Insight when no booking data -->
+                    <div class="slds-p-around--medium">
+                    <div class="insight-box">
+                    <p>Rental agreement not found. Don’t worry — we’ll create one for you to keep your move-in on track.</p>
+                    </div>
+                    </div>
+                    </template>
+                </lightning-card>
+            </div>
+            <div class="slds-col slds-large-size_4-of-12 slds-medium-size_1-of-12 slds-size_1-of-12">
+            </div>
+            </div>
+            
+            <div class="slds-grid slds-wrap">
+            <div class="slds-col slds-m-top--small slds-large-size_4-of-12 slds-medium-size_1-of-12 slds-size_1-of-12">
+                <lightning-card title="Temporary Accomodation Details" icon-name="doctype:image">
+                    <div class ="slds-p-around--medium">
+                        <template if:true={tempservice}>
+                    <template for:each={tempservice} for:item="temp">
+                        <div key={temp.Id} class="booking-item">
+                            <div class="demo-only" style="width:30rem">
+                            <article class="slds-tile slds-media">
+                            <div class="slds-media__figure">
+                            <span class="slds-icon_container" title="description of icon when needed">
+                            <lightning-icon icon-name="standard:address" alternative-text="Address" title="Address"></lightning-icon>
+                            </span>
+                            </div>
+                            <div class="slds-media__body">
+                            <h3 class="slds-tile__title slds-truncate" title="Salesforce UX">
+                            <a href="#">{temp.Name}</a>
+                            </h3>
+                            <div class="slds-tile__detail">
+                            <dl class="slds-list_vertical slds-wrap">
+                            <dt class="slds-item_label slds-text-color_weak slds-truncate" style=" font-size: 15px;font-weight: 600;" title="First Label">Number of Guests:</dt>
+                            <dd class="slds-item_detail slds-truncate" title="Description for first label">{temp.Number_of_Guests__c}</dd>
+                            <dt class="slds-item_label slds-text-color_weak slds-truncate" style=" font-size: 15px;font-weight: 600;" title="Second Label">Status:</dt>
+                            <dd class="slds-item_detail slds-truncate" title="Description for second label">{temp.Status__c}</dd>
+                            </dl>
+                            </div>
+                            </div>
+                            </article>
+                            </div>
+                        </div>
+                    </template>
+                </template>
+                <template if:false={tempservice}>
+                    <div class="insight-box">
+                    <p>No temporary accommodation info. Add it to manage your transition effectively.</p>
+                    </div>
+                </template>
+                    </div>
+                    </lightning-card>
+            </div>
+            <div class="slds-col  slds-m-top--small slds-m-left--small slds-large-size_4-of-12 slds-medium-size_1-of-12 slds-size_1-of-12">
+                <lightning-card title="Home Utility Tracking" icon-name="doctype:image">
+                    <template if:true={gasservice}>
+                <div class="slds-p-around--medium"> 
+                    
+                    <template for:each={gasservice} for:item="gas">
+                        <div key={gas.Id} class="booking-item">
+                            <p style=" font-size: 15px;font-weight: 600;">Gas Connection</p>
+                            <lightning-progress-indicator current-step={gas.Service_Status__c} type="base" variant="base">
+                            <lightning-progress-step label="Initiated" value="Initiated"></lightning-progress-step>
+                            <lightning-progress-step label="Validated" value="Validated"></lightning-progress-step>
+                            <lightning-progress-step label="Booked" value="Booked"></lightning-progress-step>
+                            <lightning-progress-step label="Completed" value="Completed"></lightning-progress-step>
+                            <lightning-progress-step label="Cancelled" value="Cancelled"></lightning-progress-step>
+                            </lightning-progress-indicator>
+                            </div>
+                    </template>
+                </div>
+                 <div class="slds-p-around--medium">
+                   <template for:each={internetservice} for:item="internet">
+                        <div key={internet.Id} class="booking-item">
+                            <p style=" font-size: 15px;font-weight: 600;">Internet Connection</p>
+                            <lightning-progress-indicator current-step={internet.Service_Status__c} type="base" variant="base">
+                            <lightning-progress-step label="Initiated" value="Initiated"></lightning-progress-step>
+                            <lightning-progress-step label="Validated" value="Validated"></lightning-progress-step>
+                            <lightning-progress-step label="Booked" value="Booked"></lightning-progress-step>
+                            <lightning-progress-step label="Completed" value="Completed"></lightning-progress-step>
+                            <lightning-progress-step label="Cancelled" value="Cancelled"></lightning-progress-step>
+                            </lightning-progress-indicator>
+                            </div>
+                    </template>
+                </div>
+            </template>
+            <template if:false={gasservice}>
+                <div class="slds-p-around--medium">
+                <div class="insight-box">
+                <p>No gas service details available. Consider adding a service for your new home.</p>
+                </div>
+                </div>
+            </template>
+                </lightning-card>
+            </div>
+            <div class="slds-col slds-large-size_4-of-12 slds-medium-size_1-of-12 slds-size_1-of-12">
+            </div>
+            </div>
+
+
+        </div>
+    
+</template>

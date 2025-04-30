@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DigitalExperienceConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>RELIS Employee Relocation Services</label>
+    <site>
+        <urlPathPrefix>service</urlPathPrefix>
+    </site>
+    <space>site/RELIS_Employee_Relocation_Services1</space>
+</DigitalExperienceConfig>

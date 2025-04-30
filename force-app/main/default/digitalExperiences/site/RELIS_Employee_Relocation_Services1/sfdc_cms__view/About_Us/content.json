@@ -1,0 +1,201 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "About Us",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "{\"url\":\"/cms/delivery/media/MCEUG5RVKWO5DMVGKQDEFCHSQUBQ\",\"contentKey\":\"MCEUG5RVKWO5DMVGKQDEFCHSQUBQ\",\"altText\":\"\",\"contentType\":\"\",\"bgPosition\":\"center center\",\"bgSizeOrRepeat\":\"/cover\"}",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"3b5641b8-474e-41e5-b5de-e995d863d9c7\",\"columns\":[{\"UUID\":\"e96da801-15af-4b58-bf1d-07d40c6ebedf\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "headerLayout" : "LogoLeft",
+                "slotOneWidth" : "",
+                "slotThreeWidth" : "",
+                "slotTwoWidth" : "",
+                "spaceBetweenSlots" : "16px"
+              },
+              "children" : [ {
+                "id" : "934a7257-d905-4554-99bc-3cfef1de3416",
+                "name" : "siteLogo",
+                "title" : "Add component",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "dxpStyle" : {
+                      "padding" : {
+                        "bottom" : "5px",
+                        "left" : "5px",
+                        "right" : "5px",
+                        "top" : "5px"
+                      }
+                    }
+                  },
+                  "children" : [ {
+                    "children" : [ {
+                      "attributes" : {
+                        "activeLineWeight" : "3px",
+                        "backgroundColor" : "rgba(255, 255, 255, 0)",
+                        "dropdownAccordionIconSize" : "xx-small",
+                        "dropdownActiveLineWeight" : "5px",
+                        "dropdownBackgroundActiveColor" : "rgba(0, 0, 0, 0)",
+                        "dropdownBackgroundColor" : "",
+                        "dropdownBackgroundHoverColor" : "",
+                        "dropdownBottomBorderRadius" : "5px",
+                        "dropdownFontSizeOverride" : "",
+                        "dropdownFontWeightOverride" : "300",
+                        "dropdownItemPadding" : "{\"top\":\"10px\",\"right\":\"10px\",\"bottom\":\"10px\",\"left\":\"10px\"}",
+                        "dropdownLineHeightOverride" : "",
+                        "dropdownMenuPadding" : "{\"top\":\"0px\",\"right\":\"0px\",\"bottom\":\"0px\",\"left\":\"0px\"}",
+                        "dropdownOverrideTextStyle" : true,
+                        "dropdownShowDividerLines" : false,
+                        "dropdownTextDecorationOverride" : "",
+                        "dropdownTextStyle" : "body-regular",
+                        "dropdownTopBorderRadius" : "5px",
+                        "fontSizeOverride" : "",
+                        "fontWeightOverride" : "",
+                        "iconSize" : "xx-small",
+                        "itemBackgroundActiveColor" : "rgba(255, 255, 255, 0)",
+                        "itemBackgroundHoverColor" : "rgba(255, 255, 255, 0)",
+                        "lineHeightOverride" : "",
+                        "menuHorizontalAlignment" : "left",
+                        "overrideTextStyle" : false,
+                        "showHomeLink" : true,
+                        "showParentMenuIcon" : true,
+                        "spaceBetweenMenuItems" : "30px",
+                        "textDecorationOverride" : "",
+                        "textStyle" : "body-regular"
+                      },
+                      "definition" : "community_navigation:customizableNavigationBarContainer",
+                      "id" : "35cc9469-caa3-40fb-8f7a-4998604b8d44",
+                      "type" : "component"
+                    } ],
+                    "id" : "ddb40fd5-13e4-47c7-817f-f1a193ed7eaf",
+                    "name" : "desktop",
+                    "title" : "Desktop View",
+                    "type" : "region"
+                  }, {
+                    "children" : [ {
+                      "attributes" : {
+                        "burgerIconHorizontalAlignment" : "left",
+                        "modalAccordionIconSize" : "xx-small",
+                        "modalActiveBackgroundColor" : "rgba(255, 255, 255, 0)",
+                        "modalActiveLineWeight" : "5px",
+                        "modalFontSizeOverride" : "",
+                        "modalFontWeightOverride" : "",
+                        "modalItemPadding" : "{\"top\":\"10px\",\"right\":\"10px\",\"bottom\":\"10px\",\"left\":\"15px\"}",
+                        "modalLineHeightOverride" : "",
+                        "modalMenuPadding" : "{\"top\":\"0px\",\"right\":\"0px\",\"bottom\":\"0px\",\"left\":\"0px\"}",
+                        "modalOverrideTextStyle" : false,
+                        "modalShowDividerLines" : true,
+                        "modalSubmenuFontSizeOverride" : "",
+                        "modalSubmenuFontWeightOverride" : "300",
+                        "modalSubmenuLineHeightOverride" : "",
+                        "modalSubmenuOverrideTextStyle" : true,
+                        "modalSubmenuTextDecorationOverride" : "",
+                        "modalSubmenuTextStyle" : "body-regular",
+                        "modalTextDecorationOverride" : "",
+                        "modalTextStyle" : "body-regular",
+                        "showHomeLink" : true
+                      },
+                      "definition" : "community_navigation:customizableNavigationHamburgerMenuContainer",
+                      "id" : "8d671a4f-dbea-4331-a789-40020f01d705",
+                      "type" : "component"
+                    } ],
+                    "id" : "32f94410-ea8c-4eda-b0c8-1925f01fd190",
+                    "name" : "mobile",
+                    "title" : "Mobile View",
+                    "type" : "region"
+                  } ],
+                  "definition" : "community_navigation:customizableNavigationMenu",
+                  "id" : "2bb2a5bf-79e2-4721-a65c-67d9197347d5",
+                  "type" : "component"
+                } ],
+                "id" : "906ffecd-6067-4a62-89c7-aa2b1f3e6830",
+                "name" : "navigation",
+                "title" : "Add component",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "alignment" : "right",
+                    "size" : "standard",
+                    "stretch" : "standard",
+                    "text" : "Log Out",
+                    "type" : "primary",
+                    "url" : "{\"linkInfo\":{\"pageReference\":{\"type\":\"comm__namedPage\",\"attributes\":{\"name\":\"Login\"}}}}"
+                  },
+                  "definition" : "dxp_base:button",
+                  "id" : "6321f175-b03a-4dd8-8a0f-a16620ec15c3",
+                  "type" : "component"
+                } ],
+                "id" : "6b248382-6dbb-4a51-8817-4943cdae390d",
+                "name" : "actions",
+                "title" : "Add component",
+                "type" : "region"
+              } ],
+              "definition" : "community_builder:customizableHeader",
+              "id" : "2701da66-31a2-4dbd-bcfb-0751768288cb",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "imageInfos" : "",
+                "richTextValue" : "<h3>\uD83E\uDDED <strong>Tailored Relocation Services Built Around Your Team</strong></h3><p><br></p><p>Whether it’s one key hire or a full-scale department move, we provide flexible relocation programs tailored to your company’s needs.</p><ul><li>Customized mobility programs</li><li>Domestic &amp; international support</li><li>Cost-effective corporate solutions</li></ul><hr><h3>\uD83D\uDD11 <strong>Complete Relocation Support – From Door to Desk</strong></h3><p><br></p><ul><li>Family in new home (caption: \"Home Search &amp; Temporary Housing\")</li><li>Movers unpacking boxes (caption: \"Packing &amp; Logistics\")</li></ul><p><br></p><p><br></p><p><br></p><hr><h3>\uD83C\uDF0D <strong>Global Reach, Local Expertise</strong></h3><p><br></p><p>No matter where business takes your team, our experienced relocation consultants are ready to support them — locally and globally.</p><ul><li>24/7 Relocation Assistance</li><li>Cultural Integration &amp; Area Tours</li><li>Language &amp; Orientation Services</li></ul><hr><h3>\uD83E\uDD1D <strong>Why Companies Trust Us</strong></h3><p><br></p><p>With years of experience and a people-first approach, we make relocation simple, strategic, and stress-free.</p><p>✔ Trusted by Fortune 500s and startups</p><p>✔ Personalized relocation strategies</p><p>✔ Scalable programs for growing businesses</p><p><br></p><p><br></p><hr><h3>\uD83D\uDCDE <strong>Let’s Get Moving Together</strong></h3><p><br></p><p>Start building a better relocation experience today.</p>"
+              },
+              "definition" : "community_builder:richTextEditor",
+              "id" : "688e6cb9-e3cd-4de4-b3bc-9765d597623a",
+              "type" : "component"
+            } ],
+            "id" : "e96da801-15af-4b58-bf1d-07d40c6ebedf",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "3b5641b8-474e-41e5-b5de-e995d863d9c7",
+          "type" : "component"
+        } ],
+        "id" : "de37cb3d-a258-4197-836e-c0b3331a6ddc",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "About Us",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "78786c96-1b99-4a2d-835f-109f0776e821",
+          "type" : "component"
+        } ],
+        "id" : "d3782f59-f812-4c2f-b6f8-7ee94c60ccba",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "3dd286b9-55e3-43a8-8b0e-4fa5d109b565",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-about-us"
+  },
+  "urlName" : "about-us"
+}

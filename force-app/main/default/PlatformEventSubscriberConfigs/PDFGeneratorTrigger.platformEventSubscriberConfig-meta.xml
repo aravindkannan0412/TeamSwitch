@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PlatformEventSubscriberConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <batchSize>200</batchSize>
+    <masterLabel>PdfGeneratorEvent</masterLabel>
+    <numPartitions>1</numPartitions>
+    <partitionKey>EventUuid</partitionKey>
+    <platformEventConsumer>PdfGeneratorEvent</platformEventConsumer>
+    <user>epic.eb042991f2f1@orgfarm.com</user>
+</PlatformEventSubscriberConfig>

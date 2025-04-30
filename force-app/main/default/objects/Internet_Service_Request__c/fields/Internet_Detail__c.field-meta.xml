@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Internet_Detail__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Internet Detail</label>
+    <referenceTo>Internet_Detail__c</referenceTo>
+    <relationshipLabel>Internet Service Requests</relationshipLabel>
+    <relationshipName>Internet_Service_Requests</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

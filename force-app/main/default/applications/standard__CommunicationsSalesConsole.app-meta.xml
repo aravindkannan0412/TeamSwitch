@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>CommunicationsSales Console</label>
+    <navType>Console</navType>
+    <tabs>standard-home</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>Temporary_Accommodation_Service__c</tabs>
+    <tabs>Porter_Details__c</tabs>
+    <tabs>Internet_Detail__c</tabs>
+    <tabs>Field_Service_Agent__c</tabs>
+    <tabs>Field_Work_Case__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>CommunicationsSalesConsole_UtilityBar</utilityBar>
+    <workspaceConfig>
+        <mappings>
+            <tab>Field_Service_Agent__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Field_Work_Case__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Internet_Detail__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Porter_Details__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Temporary_Accommodation_Service__c</tab>
+        </mappings>
+        <mappings>
+            <tab>standard-Account</tab>
+        </mappings>
+        <mappings>
+            <tab>standard-home</tab>
+        </mappings>
+    </workspaceConfig>
+</CustomApplication>

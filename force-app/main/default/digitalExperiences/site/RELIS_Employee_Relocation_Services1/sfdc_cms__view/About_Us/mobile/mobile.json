@@ -1,0 +1,20 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "About Us",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "attributes" : {
+          "spaceBetweenSlots" : "8px"
+        },
+        "id" : "2701da66-31a2-4dbd-bcfb-0751768288cb"
+      }, {
+        "attributes" : {
+          "size" : "small"
+        },
+        "id" : "6321f175-b03a-4dd8-8a0f-a16620ec15c3"
+      } ]
+    }
+  },
+  "urlName" : "about-us"
+}

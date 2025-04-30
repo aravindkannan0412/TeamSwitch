@@ -1,0 +1,88 @@
+{
+  "type" : "sfdc_cms__themeLayout",
+  "title" : "Scoped Header and Footer",
+  "contentBody" : {
+    "component" : {
+      "attributes" : {
+        "hideThemeFooter" : false,
+        "showThemeFooterAtBottom" : true,
+        "stickyThemeHeader" : false
+      },
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"1815f97b-a504-4e78-add4-3c49f2e1e046\",\"columns\":[{\"UUID\":\"883d8b0d-f2d7-4c7f-9d2e-d0600f9ca42d\",\"columnName\":\"Column 1\",\"columnKey\":\"headerSection\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "id" : "883d8b0d-f2d7-4c7f-9d2e-d0600f9ca42d",
+            "name" : "headerSection",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "1815f97b-a504-4e78-add4-3c49f2e1e046",
+          "type" : "component"
+        } ],
+        "id" : "51292663-b077-4d2b-b262-3e9666e8887c",
+        "name" : "header",
+        "title" : "Theme Header",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"7fe700fd-2d0c-4c80-8b99-9343de3cb09f\",\"columns\":[{\"UUID\":\"d783b98b-2728-4914-a866-d7c8881d63b9\",\"columnName\":\"Column 1\",\"columnKey\":\"footerSection\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "deploymentName" : "Agent_Web_Deployment",
+                "hideChatButtonOnLoad" : "Default",
+                "isExpSiteAuthMode" : false,
+                "scrtUrl" : "https://orgfarm-bb9b810dec.my.salesforce-scrt.com",
+                "siteEndpoint" : "https://orgfarm-bb9b810dec.my.site.com/ESWAgentWebDeployment1745924090177"
+              },
+              "definition" : "experience_messaging:embeddedMessaging",
+              "id" : "2808cf7e-f0bf-451f-8490-f94454986cdd",
+              "type" : "component"
+            } ],
+            "id" : "d783b98b-2728-4914-a866-d7c8881d63b9",
+            "name" : "footerSection",
+            "title" : "Theme Footer",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "7fe700fd-2d0c-4c80-8b99-9343de3cb09f",
+          "type" : "component"
+        } ],
+        "id" : "95c2df1f-4c70-49df-9ce5-1e78d8106f5e",
+        "name" : "footer",
+        "title" : "Theme Footer",
+        "type" : "region"
+      } ],
+      "definition" : "community_byo:scopedHeaderAndFooter",
+      "id" : "e188ba8c-8ec7-4f68-89e2-6330ba44d402",
+      "type" : "component"
+    }
+  },
+  "urlName" : "scoped-header-and-footer"
+}

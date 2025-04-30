@@ -1,0 +1,5 @@
+{
+  "apiName" : "Booking_Details_List__c",
+  "type" : "sfdc_cms__route",
+  "path" : "routes"
+}

@@ -1,0 +1,12 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Booking Details List",
+  "contentBody" : {
+    "activeViewId" : "Booking_Details_List",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "list-Booking_Details__c",
+    "urlPrefix" : "booking-details"
+  },
+  "urlName" : "booking-details-list"
+}
