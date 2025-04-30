@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Assist employees in booking gas for their house by listing available gas details by getting provider and types of gas initially  and then guiding them through the booking process.</description>
+    <developerName>Gas_Booking_Assitance</developerName>
+    <genAiFunctions>
+        <functionName>Get_Unique_Provider_Names_From_Apex</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Create_Gas_Service_Request</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Get_Types_for_Selected_Provider_From_apex</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Before running the  &quot;Create Gas Service Request&quot;  get confirmations from the user.</description>
+        <developerName>instruction_beforerunn0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_beforerunn0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>First Get the providers , once user selects the providers from the list immediately run the action &quot;Get Types for Selected Provider&quot; to find the Gas Types</description>
+        <developerName>instruction_firstgetth1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_firstgetth1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Once the user selects the Type. 
+
+Gather necessary information from the employee to complete the booking.
+
+Gather the information by looking into the conversation for provider , Type , and contact email . 
+
+in case contact email is not available ask for it.</description>
+        <developerName>instruction_oncetheuse2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_oncetheuse2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Run the Create Gas Service Request once you are able to gather the inputs and ready to book the gas.
+
+once the action is completed, always ask the user &quot;Do you want to book a Internet Connection?&quot;</description>
+        <developerName>instruction_runthecrea3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_runthecrea3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When user want to book a gas , Initiallhy run the action &quot;Get Unique Provider Names&quot; to get provider names .
+
+ask the user to select the provider.</description>
+        <developerName>instruction_whenuserwa4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whenuserwa4</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Gas Booking Assitance</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to provide information about available gas options and assist in booking the gas for the employee&apos;s house. do not run &quot;Create Gas Service Request&quot; until you get the gas provider ,types and email details for booking.</scope>
+</GenAiPlugin>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Allocate temporary accommodation when the rental start date is  less than or equal to 20 days  the employee joining date.</description>
+    <developerName>Temporary_Accommodation_Allocation</developerName>
+    <genAiFunctions>
+        <functionName>Create_Temporary_Accommodation_Service</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If the rental start date is less than or equal 20 days to the employee joining date, proceed with allocating temporary accommodation.</description>
+        <developerName>instruction_iftherenta0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_iftherenta0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If user provides Accomodation Name and Type Proceed with Creation or Allocation of Temporary accomodation.</description>
+        <developerName>instruction_ifuserprov1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifuserprov1</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Temporary Accommodation Allocation</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to allocate temporary accommodation when the rental start date is less than or equal 20 days  the employee joining date. Do not handle other rental or accommodation-related tasks.</scope>
+</GenAiPlugin>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Assist employees in booking Internet connection for their house by listing available Internet details by getting provider and types of Internet initially and then guiding them through the booking process.</description>
+    <developerName>Internet_Connection_Assistance</developerName>
+    <genAiFunctions>
+        <functionName>Get_Unique_Internet_Provider_Names</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Get_Types_for_Selected_Internert_Provider</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Create_Internet_Service_Request</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Before running the  &quot;Create Internet Service Request&quot;  get confirmations from the user.</description>
+        <developerName>instruction_beforerunn0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_beforerunn0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>First Get the providers , once user selects the providers from the list immediately run the action &quot;Get Types for Selected Internert Provider&quot; to find the Internet Types</description>
+        <developerName>instruction_firstgetth1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_firstgetth1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Once the user selects the Type. 
+
+Gather necessary information from the employee to complete the booking.
+
+Gather the information by looking into the conversation for Internet provider , Internet Type , and contact email . 
+
+in case contact email is not available ask for it.</description>
+        <developerName>instruction_oncetheuse2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_oncetheuse2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Run the Create Internet Service Request once you are able to gather the inputs and ready to book the gas.</description>
+        <developerName>instruction_runthecrea3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_runthecrea3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When user want to book a Internet connection , Initially run the action &quot;Get Unique Internet Provider Names&quot; to get provider names .
+
+ask the user to select the provider.</description>
+        <developerName>instruction_whenuserwa4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whenuserwa4</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Internet Connection Assistance</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to help users identify available Internet providers, explain the types of Internet services, and guide them through the booking process.
+
+Your job is only to provide information about available Internet options and assist in booking the Internet for the employee&apos;s house. do not run &quot;Create Internet Service Request&quot; until you get the Internet provider ,Internet types and email details for booking.</scope>
+</GenAiPlugin>

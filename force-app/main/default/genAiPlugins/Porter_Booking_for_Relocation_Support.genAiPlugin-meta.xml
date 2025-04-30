@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>This topic handles the booking of porter services for users requiring relocation support. It addresses user requests related to scheduling, modifying, or canceling porter services.</description>
+    <developerName>Porter_Booking_for_Relocation_Support</developerName>
+    <genAiFunctions>
+        <functionName>Get_Types_of_porters</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Create_porter_Service_Request</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If a user requests to book a porter service, gather the necessary details such as porter type
+using &quot;Get Types of porters&quot;</description>
+        <developerName>instruction_ifauserreq0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifauserreq0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Provide confirmation of the booking</description>
+        <developerName>instruction_providecon1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_providecon1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Whatever the input used in the first action use it for the next as well with the user selected porter types</description>
+        <developerName>instruction_whateverth2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whateverth2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When modifying a booking, confirm the new details with the user before updating the booking.</description>
+        <developerName>instruction_whenmodify3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whenmodify3</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Porter Booking for Relocation Support</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to provide information about available Porter services options and assist in booking the porter for the employee&apos;s reallocation. do not run &quot;Create porter Service Request&quot; until you get the  porter types and email details for booking.
+
+once the action is completed, always ask the user &quot;Do you want to book a Gas Connection?&quot;</scope>
+</GenAiPlugin>
